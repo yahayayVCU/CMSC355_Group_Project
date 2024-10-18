@@ -4,7 +4,7 @@ My groupmembers are:
 - Yasin Yahaha
 - Axel Lopez
 - Ayten Abdel
-- Esele Eli
+- Esele Isi
 
 
 ------------------ Fill in some information about your project under this ------------------

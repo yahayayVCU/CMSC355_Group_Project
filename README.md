@@ -1,7 +1,7 @@
 My groupmembers are:
 - Mohamed Abdul Wahab
 - Simrah Siddiqi
-- Yasin Yahaha
+- Yasin Yahaya
 - Axel Lopez
 - Ayten Abdel
 - Esele Isi

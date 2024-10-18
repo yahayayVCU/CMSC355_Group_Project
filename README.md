@@ -3,7 +3,8 @@ My groupmembers are:
 - Simrah Siddiqi
 - Yasin Yahaha
 - Axel Lopez
-- XXXX
+- Ayten Abdel
+- Esele Eli
 
 
 ------------------ Fill in some information about your project under this ------------------

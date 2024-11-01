@@ -7,8 +7,8 @@ const FindTherapistPage = () => {
 
   const therapistLinks = {
     California: [
-      { name: "Therapist A", link: "https://www.californiatherapistA.com" },
-      { name: "Therapist B", link: "https://www.californiatherapistB.com" },
+      { name: "Therapist A", link: "https://www.growtherapy.com" },
+      { name: "Therapist B", link: "https://www.zencare.com" },
     ],
     Texas: [
       { name: "Therapist C", link: "https://www.texastherapistC.com" },

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './App.css';
 import { Link, Routes, Route } from "react-router-dom";
-import FindTherapist from "./findTherapist/therapists";
+import FindTherapist from "./findTherapist/therapist";
 import Hobbies from "./hobbies/hobbies";
 import Resources from "./resources/resources";
 

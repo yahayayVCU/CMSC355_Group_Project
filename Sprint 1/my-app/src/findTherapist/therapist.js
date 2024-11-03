@@ -4,6 +4,7 @@ import './therapist.css';
 const FindTherapistPage = () => {
   const [selectedState, setSelectedState] = useState("");
   const [therapists, setTherapists] = useState([]);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const therapistLinks = {
     California: [
@@ -18,12 +19,20 @@ const FindTherapistPage = () => {
       { name: "Therapist E", link: "https://www.floridatherapistE.com" },
       { name: "Therapist F", link: "https://www.floridatherapistF.com" },
     ],
+    Other: []  // Added "Other" to therapistLinks
   };
 
   const handleStateChange = (e) => {
     const state = e.target.value;
     setSelectedState(state);
-    setTherapists(therapistLinks[state] || []);
+
+    if (state === "Other") {
+      setTherapists([]);
+      setErrorMessage("Sorry, we don't have information about other states. Please select from the states provided: California, Texas, or Florida.");
+    } else {
+      setTherapists(therapistLinks[state] || []);
+      setErrorMessage("");
+    }
   };
 
   return (
@@ -39,9 +48,12 @@ const FindTherapistPage = () => {
         <option value="California">California</option>
         <option value="Texas">Texas</option>
         <option value="Florida">Florida</option>
+        <option value="Other">Other State</option>
       </select>
       <div className="therapist-links">
-        {therapists.length > 0 ? (
+        {errorMessage ? (
+          <p className="error-message">{errorMessage}</p>
+        ) : (
           therapists.map((therapist, index) => (
             <a
               key={index}
@@ -53,8 +65,6 @@ const FindTherapistPage = () => {
               {therapist.name}
             </a>
           ))
-        ) : (
-          selectedState && <p>No therapists found in this state.</p>
         )}
       </div>
     </div>

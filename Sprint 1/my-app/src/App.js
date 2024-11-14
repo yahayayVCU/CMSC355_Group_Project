@@ -1,16 +1,18 @@
 import React, { useState } from "react";
 import './App.css';
-import { Link, Routes, Route } from "react-router-dom";
+import { Link, Routes, Route, useNavigate } from "react-router-dom";
 import FindTherapist from "./findTherapist/therapist";
 import Hobbies from "./hobbies/hobbies";
 import Resources from "./resources/resources";
 import JournalPage from "./journal/journal";
 import MoodPage from "./mood/mood";
 import ToDoPage from "./todo/todo";
+import ChatPage from "./chat/chat";
 
 function App() {
   const [showResourcesPopup, setShowResourcesPopup] = useState(false);
   const [showJournalPopup, setShowJournalPopup] = useState(false);
+  const navigate = useNavigate();
 
   const toggleResourcesPopup = () => {
     setShowResourcesPopup(!showResourcesPopup);
@@ -18,6 +20,10 @@ function App() {
 
   const toggleJournalPopup = () => {
     setShowJournalPopup(!showJournalPopup);
+  };
+
+  const goToChat = () => {
+    navigate("/chat"); // Navigate to the chat page
   };
 
   return (
@@ -29,7 +35,8 @@ function App() {
       <div className="button-container">
         <button onClick={toggleResourcesPopup} className="btn">Resources</button>
         <button onClick={toggleJournalPopup} className="btn">Journal</button>
-        <button className="btn">Chat</button>
+        <button onClick={goToChat} className="btn">Chat</button> {/* Chat button */}
+        {/* <button className="btn">Chat</button> */}
       </div>
 
       {/* Pop-up menu for Resources button */}
@@ -77,6 +84,7 @@ function App() {
         <Route path="/journal" element={<JournalPage />} />
         <Route path="/mood" element={<MoodPage />} />
         <Route path="/todo" element={<ToDoPage />} />
+        <Route path="/chat" element={<ChatPage />} />
       </Routes>
     </div>
   );

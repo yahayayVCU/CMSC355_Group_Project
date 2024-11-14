@@ -1,0 +1,45 @@
+.find-therapist-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #4a4a4a;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .state-dropdown {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .therapist-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .therapist-link {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  
+  .therapist-link:hover {
+    color: #2c3e50;
+    text-decoration: underline;
+  }
+  

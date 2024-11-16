@@ -90,23 +90,3 @@
     background-color: #a71d2a;
 }
 
-/*
-.item-description {
-    padding: 5px;
-    width: 200px;
-    margin-bottom: 10px;;
-}
-
-.item-completed:checked + .item-description {
-    background: rgba(98, 98, 87, 0.464); 
-    text-decoration: line-through;
-}
-
-#add {
-     padding: 8px 14px;
-     font-weight: bold;
-     color: white;
-     background: rgb(19, 201, 140);
-     cursor: pointer;
-}
-*/
